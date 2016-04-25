@@ -16,7 +16,7 @@ To be honest, I'm *not* an expert of **Linux** or Linux programming. I've lived 
 
 [![I have no idea what I'm doing  src][Img_Dog1]][Img_Dog2]
 
-# Machine leearning in ~~Windows~~ Linux
+# Machine learning in ~~Windows~~ Linux
 
 However, I recently moved my research environment from Windows to **Linux** because I admitted that indepth **machine learning research** cannot be conducted on the Windows environment. In particular, most **deep learning libraries** such as [Tensorflow][TF] and [Torch] does not support Windows environment. That means, if you want to study the state-of-the-art machine learning technique which leads the revolution of today's AI technology, you cannot avoid using Linux system. I think that's [why Microsoft is brining the bash shell to Windows][MS] in this summer.
 
