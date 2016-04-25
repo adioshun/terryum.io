@@ -15,8 +15,7 @@ I'm looking forward to supporters who is willing to **translate** my posts into 
 e.g. "2016-04-23-Welcome.md" -> "2016-04-23-Welcome_KOR.md"
 ```
 
-If your files are accepted, I'll post it on the blog with an **expression of your credit**. 
-
+If your files are accepted, I'll post it on the blog with an **expression of your credit**. Also, you can post your translated post **on your own blog** for archiving. (Please just provide the link of the original source in your mirrored post.)
 
 > *This post is tranlated in Korean in 2016-01-01 by [Terry Um](http://facebook.com/terryum)*
 
