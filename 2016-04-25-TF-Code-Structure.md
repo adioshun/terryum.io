@@ -86,7 +86,7 @@ Finally, the nodes for receiving training data are defined as follows.
     y_true = tf.placeholder("float", [None, n_output])
 ```
 
-If our goal is to classfy digits (0~9) from MNIST data of which dimension is 64 by 64 (=784), ```n_input``` is 784 while ```n_output``` is 10.
+If our goal is to classfy digits (0~9) from MNIST data of which dimension is 28 by 28 (=784), ```n_input``` is 784 while ```n_output``` is 10.
 
 ### Summary
 
