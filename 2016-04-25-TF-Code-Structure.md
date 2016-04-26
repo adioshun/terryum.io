@@ -112,7 +112,7 @@ with tf.Session() as sess:
     sess.run(train_op, feed_dict={X: x_data, Y: y_data})
 ```
 
-As mentioned earlier, this is *not* a complete code, thus, please refer to the example codes listed above. In real applications, you need to train the neural network with **minibatch** (subset) of data and iterate the learning process(session) for **several epochs** for getting better result. Also, [Convoutional neural network][ConvNet], which is the today's new standard for image recognition problems, requires to include additional layers such as convolution layers and max pooling layers.
+As mentioned earlier, this is *not* a complete code, thus, please refer to the example codes listed above. In real applications, you need to train the neural network with **minibatch** (subset) of data and iterate the learning process(session) for **several epochs** for getting better result. Also, [Convolutional neural network][ConvNet], which is the today's new standard for image recognition problems, requires to include additional layers such as convolution layers and max pooling layers.
 
 But the basic workflow of the TF code is same; first **define the structure** of the neural network, second, **feed training data** into the structure to optimize the model. That's it. You can **evaluate the results** by comparing predicted values with true values.
 
