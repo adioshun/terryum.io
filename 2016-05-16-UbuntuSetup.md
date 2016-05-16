@@ -71,6 +71,15 @@ $ python
 - If you see a failure message in ```import tensorflow``` even though you have successfully installed Tensorflow, it may be because you have used ```sudo``` during the installations of Anaconda or Tensorflow.
 - In this case, uninstall Anaconda (simply [delete the Anaconda][L_UnAna] folder with ```$ sudo rm -rf ~/anaconda2```) and correctly follow the instructions again.
 
+### Python packages on Conda
+- You can manage each Conda virtual environment, independently. In other words, you can install and use different versions of python packages in different virtual environment.
+- After running the virtual environment by ```source activate tf```, you can check the list of installed packages by ```conda list```
+- Here is some packages you may want to have installed. Note that we are going to use ```conda install``` instead of ```pip install```.
+
+```bash
+$ conda install jupyter numpy scipy matplotlib pandas scikit-learn scikit-image
+```
+
 ### Git
 - Git for using [GitHub][L_GitHub] repository
 
