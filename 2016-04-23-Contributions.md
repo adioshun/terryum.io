@@ -13,7 +13,6 @@ tags:
 ---
 
 # I'm looking for your contributions
-&nbsp;
 I have created [a repository in GitHub][GitHub] in which the markdown files of all posts are stored. Do you want to **correct** my posts? Or, could you give us a favor to **translate** useful blog posts into your laguage? You can directly modify and improve the posts via the [GitHub repository][GitHub]
 
 Leave your contribution <u><b><a href="https://github.com/terryum/terryum.io">[here]</a></b></u>
@@ -21,7 +20,6 @@ Leave your contribution <u><b><a href="https://github.com/terryum/terryum.io">[h
 ![GitHub repo][Img_GitHub]
 
 # Thank you for your contributions
-&nbsp;
 This repository stores markdown files of the blog posts at [TerryUm's Blog](http://terryum.io). Since my initial blog posts may not be perfect in content-wise or English-wise, I'm looking forward to your contributions to **correct my blog posts** or **translating** them into other languages.
 
 ### 1. Corrections
