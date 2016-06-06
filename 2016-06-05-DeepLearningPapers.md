@@ -20,13 +20,13 @@ That is why I made the  [*awesome-deep-laerning-papers*][L_PaperGit] by myself. 
 
 Here, I briefly summerazie some trends of deep learning researches that appear in the list of most cited deep learning papers
 
-### People are start thinking why deep neural networks works
+### People start thinking why deep neural networks works
 
 Enraptured by the amazing performance of deep neural network (DNN), people have been delved into the structure of DNN and improved recognition accuracy for years. For example, AlexNet, VGG Net, NIN, GoogLeNet, and ResNet are the outcomes for that. (See the [neural network models][L_NNModels] that have recently been developed.)
 
 However, we know that we cannot go further without a sound understanding of fundamentals. Researchers recently have found some interesting phenomena, for examples, DNN can be easily fooled [[1]](#11) by some manipulated images and the first layers of CNN learn [Gabor filter][L_Gabor] regardless of tasks or initial weight values [[2]](#22). These interesting findings lead discussions on the transferability of the learned knowledge and the role of adversarial examples [[1]](#11), [[2]](#22). Also theories that explain why CNN is successful are being investigated (e.g. [[3]](#33), [[4]](#44)). I hope theoretical approaches will lead advances in practical approaches, and vice versa.
 
-### From "Going deeper" to "Compressing lighter"
+### From "Going deeper" to "Compressing more lightly"
 
 GoogLeNet and ResNet empirically have proved that deeper networks with more data give better performance in terms of accuracy. However, accuracy may not be the only metric which appreciates the excellency of learning methods. SqueezeNet [[5]](#55) which aims at developing AlexNet-level accuracy with smal size model reveals the three motivations for their work as follows.
 
