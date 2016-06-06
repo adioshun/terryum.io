@@ -12,7 +12,7 @@ tags:
  - Jekyll
 ---
 
-Today, I screwed up my Ubuntu, again. One thing I learned while I have been being used Ubuntu is that, reinstalling Ubuntu can be much faster than stuking in a difficult problem which might not be able to be solved forever. Today, after realizing all environment variables are screwed, I quickly reinstalled **Ubuntu 16.04** (rather than Ubuntu 14.04!) and set up the environment for machine learning research as follows.
+Today, I screwed up my Ubuntu, again. One thing I learned while I have been being used Ubuntu is that, reinstalling Ubuntu can be much faster than stucking in a difficult problem which might not be able to be solved forever. Today, after realizing all environment variables are screwed, I quickly reinstalled **Ubuntu 16.04** (rather than Ubuntu 14.04!) and set up the environment for machine learning research as follows.
 
 I am leaving my records for myself as well as for those who also need a manual to quickly setup Ubuntu 16.04. Before starting the installations, I would like to remark that the shortcuts of ```copy / paste``` in terminal(```Ctrl+T```) are ```Ctrl+Shift+C``` *or* ```V``` rather than ```Ctrl+C``` *or* ```V```. You can copy and paste the following example codes for your installation except for specific filenames.
 
@@ -35,7 +35,7 @@ $ sudo apt-get upgrade
 
 ### Nvidia Driver
 
-- *[Warning]* This is the most dangeous part in Ubuntu setting. Installing a wrong driver can make fatal errors for your system, e.g., infinite login loop. Thus, make sure to backup all your important files before installation.
+- *[Warning]* This is the most dangerous part in Ubuntu setting. Installing a wrong driver can make fatal errors for your system, e.g., infinite login loop. Thus, make sure to backup all your important files before installation.
 - *[Warning]* Don't install Nvidia graphic driver by using, e.g., ```sudo apt-get install nvidia-361```
 
 - I followed this [article][L_NvidiaInstall] for Nvidia driver installation.
