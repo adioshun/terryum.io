@@ -11,7 +11,6 @@ tags:
 ---
 
 # What is Tensorflow
-&nbsp;
 I believe you may have already heard about what the [TensorFlow][TF] is. **TensorFlow**(TF) is an open source machine learning library [developed by Google][TF_Google]. As the name it is, the library uses  **tensors**(multi-dimensional arrays) as its basic data type, and run the learning algorithm as if liquid(data) is **flowing** through the graph structure.
 
 The **structure of TF codes** is quite intuitive. First, **define the graph structure** for learning, and second, **instil the data liquid** (data stream) into the graph structure. **That's it**. How simple it is...!
@@ -27,11 +26,10 @@ Before I start, I'd like to mention that the contents of this article is based o
 ![TensorFlow][Img_TF]
 
 # Backtracking of the flow of a TF code
-&nbsp;
+</br>
 I'd like to **backtrack** the workflow of a TF codes from the end. What would be the *last* step of the TF code? It must be **feeding the data** into the pre-built graph structure (learning structure) to get the results.
 
 ### Feeding data into the graph structure
-&nbsp;
 The ```tf.Session()``` runs the learning structure by feeding the data ```feed_dict``` into the structure ```train_op```. Note that all variables should be initialized before used.
 
 ```python
@@ -43,7 +41,6 @@ with tf.Session() as sess:
 We can think the learning structure as a **continuous data flow**. If you fetch a datum block from the end, then a input block will automatically be fed into the front because the flow should be continuous. Thus, what the ```tf.Session()``` need to acceess is not the whole structure of the graph, but just the the last output of the structure. Here, the last output that ```tf.Session()``` is accessing is ```train_op```.
 
 ### Optimization
-&nbsp;
 Our remaining question is where ```train_op``` comes from. It should be the learning result from the leaning structure, i.e., **neural network**. In fact, the process of learning neural network is nothing but **optimizing weights** of the neural netork to fit the model into given truths(labels). Thus, the last step of the learning structure is **optimization**, and ```train_op``` comes from this optimiztion process.
 
 The optimization process is defined with the choice of **optimizer** and **cost function**.
@@ -55,7 +52,6 @@ train_op = tf.train.GradientDescentOptimizer(0.05).minimize(cost)
 Here, we use ```softmax_cross_entropy_with_logits``` as our cost function, and ```GradientDescentOptimizer``` as our optimizer. You can find list of available optimizers and cost functions (cross entropy functions) from [here][Opt] and [here][Loss], respectively. You can also define your own optimizer or cost function for your own purpose.
 
 ### Structure of the neural network
-&nbsp;
 [![Perceptron][Img_Neuron1]][Img_Neuron2]
 
 Now, we need to define the **subject** of the optimization; what structure should we optimize? The answer is the **neural network** structure. Thus, we need to define the neural network structure to be optimized. The basic structure of neural network is as follows:
@@ -87,7 +83,6 @@ Finally, the nodes for receiving training data are defined as follows.
 If our goal is to classfy digits (0~9) from MNIST data of which dimension is 28 by 28 (=784), ```n_input``` is 784 while ```n_output``` is 10.
 
 ### Summary
-&nbsp;
 To recap, the following is our first neural network code by using TF.
 
 ```python
