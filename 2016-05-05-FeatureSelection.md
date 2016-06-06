@@ -12,10 +12,9 @@ tags:
 ---
 > The Korean translation of this article is now [available](http://terryum.io/korean/2016/05/05/FeatureSelection_KOR/)!
 
-&nbsp;
 
 # Why do we need features?
-&nbsp;
+
 Roughly speaking, **machine learning** is a black box which maps from input to output data. This *magic box* is a learned function which can be either linear or nonlinear **function of input**. We can learn the function by using training data, but it doesn't always work well.
 
 Let's consider an extreme case: we would like to predict the *result of a baseball game* (=output) based on *the data of number of viewers* (=input). Do you think it is possible to accurately predict the result with this input? It may not because the input contains **not enough information** to explain how output is generated.
@@ -27,7 +26,7 @@ As presented in the previous example, the performance of machine learning is hig
 Thus, what we usually do is to gather *enough* data. first (e.g., attach enough number of sensors to the object we want to observe), and figure out which one is useful or not later. The later process is called **feature selection** or **feature extraction**. This process is usually done before starting learning process (because it is a process to make a *new input*), so it is one of the core pre-process in machine learning structure.
 
 # What is dimensionality reduction?
-&nbsp;
+
 Let's say now we have enough input which may be very high dimensional. For example, if you attach ```m``` accelerometers to the subject's body, you will get ```3m``` dimensional data because each accelerometer measures ```acc_x, acc_y, acc_z```. Also if you gather the data during the time ```t``` which is correspond to ```n``` samples, what you will get is a ```n by 3m``` matrix as your input.
 
 As we mentioned before, we may not need all ```3m``` features; some features may be redundant because they can be represented by a combination of other features. Thus we believe that the **latent space** which causes the observed samples may be much lower than the **observation space**. Figuring out the latent space based on the samples on the observation space is called **dimensionality reduction** process. (In this case, the samples can be considered as *realizations* of the points in the latent space.)
@@ -37,7 +36,7 @@ Before going further, I'd like to re-emphasize that **dimensionality reduction t
 [![Finding the latent space][S3_Dim]][Src_Dim]
 
 # Feature selection vs. Feature extraction
-&nbsp;
+
 There are two ways to reduce the dimension of the data: **feature selection** and **feature extraction**.
 
 The objective of **feature selection** is to make a compact feature set by choosing the subset of all features. For example, if you think **acc_x** and **acc_y** gives no effect on the result of jumping height which is the target to be predicted, you can simply drop those from the entire variable sets. That is the thing done by feature selection methods: remove irrelevant features(variables) from the original data.
