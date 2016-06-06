@@ -14,13 +14,13 @@ As some people already know, I have made an awesome-list named [*Most Cited Deep
 
 * [Link]  [Awesome-Deep-Learning-Papers][L_PaperGit]
 
-That is why I made the  [*awesome-deep-laerning-papers*][L_PaperGit] by myself. It was not a work only for others, but also for myself as well. As surveying on deep learning papers, I could realize what I have missed among the recent advances in deep learning researches, and also get some ideas how I can integrate the spread ideas which appear in different fields.
+That is why I made the  [*awesome-deep-learning-papers*][L_PaperGit] by myself. It was not a work only for others, but also for myself as well. As surveying on deep learning papers, I could realize what I have missed among the recent advances in deep learning researches, and also get some ideas how I can integrate the spread ideas which appear in different fields.
 
 ![Awesome deep learning papers][S3_DLPRepo]
 
 Here, I briefly summerazie some trends of deep learning researches that appear in the list of most cited deep learning papers
 
-### People start thinking why deep neural networks works
+### People start thinking why deep neural networks work
 
 Enraptured by the amazing performance of deep neural network (DNN), people have been delved into the structure of DNN and improved recognition accuracy for years. For example, AlexNet, VGG Net, NIN, GoogLeNet, and ResNet are the outcomes for that. (See the [neural network models][L_NNModels] that have recently been developed.)
 
