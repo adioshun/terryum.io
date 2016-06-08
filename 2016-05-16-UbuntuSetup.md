@@ -109,7 +109,7 @@ $ ./Anaconda2-4.0.0-Linux-x86_64.sh   # Check the .sh filename
 - Restart the terminal *or* run ```$ source ~/.bashrc```
 
 
-### Tensorflow (cpu) on Anaconda
+### Tensorflow on Anaconda
 - Follow the instruction of the office [Tensorflow site][L_TF]
 
 ```bash
@@ -142,6 +142,20 @@ $ python
 - If you see a failure message in ```import tensorflow``` even though you have successfully installed Tensorflow, it may be because you have used ```sudo``` during the installations of Anaconda or Tensorflow.
 - In this case, uninstall Anaconda (simply [delete the Anaconda][L_UnAna] folder with ```$ sudo rm -rf ~/anaconda2```) and correctly follow the instructions again.
 - If you have installed Tensorflow(gpu) but fail to load ```libcudart.so.7.5```, it may be because you didn't change the permission of the lib files or edit .bashrc file. Please check the instruction for CUDA installation again.
+
+### Theano on Anaconda
+-First, create a conda environment for Theano
+
+```bash
+$ conda create -n theano python=2.7
+```
+
+- Search a [proper version of Theano](https://anaconda.org/search?q=theano) before installing it using ```conda```.
+
+```bash
+$ source activate theano
+(theano) conda install -c trung theano=0.8.2  # Check the conda package name
+```
 
 ### Python packages on Conda
 - You can manage each Conda virtual environment, independently. In other words, you can install and use different versions of python packages in different virtual environment.
